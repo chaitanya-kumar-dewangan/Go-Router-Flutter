@@ -4,7 +4,6 @@ class ProfilePage extends StatelessWidget {
 
   static const String routName = 'profile';
   final int id;
-
   const ProfilePage({super.key, required this.id,});
 
   @override
@@ -16,7 +15,6 @@ class ProfilePage extends StatelessWidget {
           mainAxisSize: MainAxisSize.min,
           children: [
             Text('$id', style: Theme.of(context).textTheme.headlineLarge,)
-
           ],
         ),
       ),

@@ -19,7 +19,7 @@ class HomePage extends StatelessWidget {
           mainAxisSize: MainAxisSize.min,
           children: [
             ElevatedButton(onPressed: () {
-              context.goNamed(PageOne.routName);
+              context.goNamed(PageOne.routName, extra: 'Hello Flutter');
             }, child: const Text('Page One')),
 
             ElevatedButton(onPressed: () {
@@ -28,7 +28,11 @@ class HomePage extends StatelessWidget {
 
             ElevatedButton(onPressed: () {
               context.goNamed(ProfilePage.routName, pathParameters: {'id': '1'});
-            }, child: const Text('My Profile'))
+            }, child: const Text('My Profile')),
+
+            ElevatedButton(onPressed: () {
+              context.go('/o');
+            }, child: const Text('error page')),
 
           ],
         ),

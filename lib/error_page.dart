@@ -1,19 +1,20 @@
 import 'package:flutter/material.dart';
 
-class PageTwo extends StatelessWidget {
-  static const String routName = 'two';
-  final String greetings;
-  const PageTwo({super.key, required this.greetings});
+class ErrorPage extends StatelessWidget {
+
+  static const String routName = 'error';
+ // final int id;
+  const ErrorPage({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('Page one'),),
+      appBar: AppBar(title: Text('My Profile'),),
       body: Center(
         child: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
-              Text(greetings)
+            Text('Pag Not Found',)
           ],
         ),
       ),
